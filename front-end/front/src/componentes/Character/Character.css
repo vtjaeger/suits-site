@@ -1,23 +1,57 @@
-.character-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-  
-  }
-  
-  .character-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .character-name {
-    font-weight: bold;
-  }
-  
-  .character-description {
-    margin-top: 8px;
-    color: #555;
-  }
-  
+.characters-container {
+  text-align: center; /* Alinha os elementos filhos horizontalmente */
+}
+
+.characters-container h1 {
+  font-variant: small-caps;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os cards */
+  gap: 50px; /* Espaçamento entre os cards */
+}
+
+.character-card-link {
+  display: inline-block;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Adiciona transição para box-shadow e background-color */
+  background-color: rgb(211, 211, 211);
+  color: rgb(0, 0, 0); 
+  width: calc(33.33% - 270px); /* Define a largura de cada card */
+  margin-bottom: 20px; /* Espaçamento entre as linhas */
+  text-decoration: none;
+}
+.character-card-link:last-child {
+  margin-right: 0;
+}
+
+.character-card-link:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+.character-card-link:hover .character-name {
+  color: red; /* Altera a cor do nome para vermelho ao passar o mouse sobre o link */
+}
+
+.character-name {
+  font-weight: bold;
+  font-size: 16px; /* Reduz o tamanho da fonte do nome */
+  transition: color 0.5s ease; /* Adiciona transição para a cor do texto */
+}
+
+.character-description {
+  margin-top: 8px;
+  font-size: 14px; /* Reduz o tamanho da fonte da descrição */
+  color: #555;
+}
+
+.character-img {
+  width: 150px;
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 8px;
+}
