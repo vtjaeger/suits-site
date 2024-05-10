@@ -1,0 +1,23 @@
+.character-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  
+  }
+  
+  .character-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .character-name {
+    font-weight: bold;
+  }
+  
+  .character-description {
+    margin-top: 8px;
+    color: #555;
+  }
+  

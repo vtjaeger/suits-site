@@ -1,0 +1,30 @@
+.header {
+    text-align: center;
+    background-color: black;
+    position: relative; /* Adiciona position: relative */
+}
+
+.header img {
+    width: 13%;
+    margin-bottom: 2%;
+}
+
+.menu {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(255, 107, 107);
+}
