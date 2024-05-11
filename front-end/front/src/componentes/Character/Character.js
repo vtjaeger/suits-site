@@ -1,5 +1,4 @@
-/* Character.js */
-
+// Character.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Character.css';
@@ -30,14 +29,6 @@ const Character = () => {
                         </div>
                     </Link>
                 ))}
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
             </div>
         </div>
     );

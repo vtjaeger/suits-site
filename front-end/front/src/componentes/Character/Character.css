@@ -1,5 +1,5 @@
 .characters-container {
-  text-align: center; /* Alinha os elementos filhos horizontalmente */
+  text-align: center;
 }
 
 .characters-container h1 {
@@ -8,9 +8,9 @@
 
 .character-list {
   display: flex;
-  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
-  justify-content: center; /* Centraliza os cards */
-  gap: 50px; /* Espaçamento entre os cards */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }
 
 .character-card-link {
@@ -18,34 +18,37 @@
   text-align: center;
   border-radius: 8px;
   box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Adiciona transição para box-shadow e background-color */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
   background-color: rgb(211, 211, 211);
   color: rgb(0, 0, 0); 
-  width: calc(33.33% - 270px); /* Define a largura de cada card */
-  margin-bottom: 20px; /* Espaçamento entre as linhas */
+  width: calc(33.33% - 270px);
+  margin-bottom: 20px;
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
+
 .character-card-link:last-child {
   margin-right: 0;
 }
 
 .character-card-link:hover {
+  transform: scale(1.05); 
   background-color: rgb(204, 204, 204);
 }
 
 .character-card-link:hover .character-name {
-  color: red; /* Altera a cor do nome para vermelho ao passar o mouse sobre o link */
+  color: red; 
 }
 
 .character-name {
   font-weight: bold;
-  font-size: 16px; /* Reduz o tamanho da fonte do nome */
-  transition: color 0.5s ease; /* Adiciona transição para a cor do texto */
+  font-size: 16px; 
+  transition: color 0.5s ease;
 }
 
 .character-description {
   margin-top: 8px;
-  font-size: 14px; /* Reduz o tamanho da fonte da descrição */
+  font-size: 14px;
   color: #555;
 }
 

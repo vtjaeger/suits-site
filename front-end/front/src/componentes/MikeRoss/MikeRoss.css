@@ -1,0 +1,29 @@
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.descricao p {
+    margin-bottom: 15px;
+}
+
+.img-container img {
+    border-radius: 10px;
+    max-width: 900px;
+    height: auto;
+}
+
+.img-container {
+    text-align: center;
+} 

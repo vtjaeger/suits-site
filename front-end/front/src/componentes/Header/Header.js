@@ -12,7 +12,7 @@ export const Header = () => {
                 <ul className="menu">
                     <li><Link to="/character">Personagens</Link></li>
                     <li><Link to="/temporadas">Temporadas</Link></li>
-                    <li><Link to="/">Sobre a série</Link></li>
+                    <li><Link to="/">Sobre </Link></li>
                 </ul>
             </nav>
         </header>
