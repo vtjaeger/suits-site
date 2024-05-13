@@ -11,7 +11,7 @@ export const Header = () => {
             <nav>
                 <ul className="menu">
                     <li><Link to="/character">Personagens</Link></li>
-                    <li><Link to="/temporadas">Temporadas</Link></li>
+                    <li><Link to="/season">Temporadas</Link></li>
                     <li><Link to="/">Sobre </Link></li>
                 </ul>
             </nav>

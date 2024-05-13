@@ -22,8 +22,10 @@
     border-radius: 10px;
     max-width: 900px;
     height: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .img-container {
     text-align: center;
+    padding-bottom: 30px;
 } 

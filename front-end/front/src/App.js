@@ -12,6 +12,7 @@ import RachelZane from './componentes/RachelZane/RachelZane';
 import JessicaPearson from './componentes/JessicaPearson/JessicaPearson';
 import RobertZane from './componentes/RobertZane/RobertZane';
 import KatrinaBennett from './componentes/KatrinaBennet/KatrinaBennet';
+import Seasons from './componentes/Seasons/Seasons';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/character/6" element={<JessicaPearson/>} />
           <Route path="/character/7" element={<RobertZane/>} />
           <Route path="/character/8" element={<KatrinaBennett/>} />
+          <Route path="/season" element={<Seasons/>}></Route>
           
         </Routes>
 
