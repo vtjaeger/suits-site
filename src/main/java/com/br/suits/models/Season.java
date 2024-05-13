@@ -11,13 +11,16 @@ public class Season {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String sinopse;
+    @Column(columnDefinition = "TEXT")
+    private String synopsis;
+    @Column(columnDefinition = "TEXT")
+    private String introduction;
     @OneToMany(mappedBy = "season", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Episode> episodes;
 
     public Season(Long id, String sinopse) {
         this.id = id;
-        this.sinopse = sinopse;
+        this.synopsis = sinopse;
     }
 
     public Season() {
@@ -31,12 +34,12 @@ public class Season {
         this.id = id;
     }
 
-    public String getSinopse() {
-        return sinopse;
+    public String getSynopsis() {
+        return synopsis;
     }
 
-    public void setSinopse(String sinopse) {
-        this.sinopse = sinopse;
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
     }
 
     public List<Episode> getEpisodes() {
@@ -45,5 +48,13 @@ public class Season {
 
     public void setEpisodes(List<Episode> episodes) {
         this.episodes = episodes;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
     }
 }

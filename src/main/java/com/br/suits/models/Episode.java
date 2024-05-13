@@ -11,6 +11,7 @@ public class Episode {
     private Long id;
     private int episodeNumber;
     private String title;
+    @Column(columnDefinition = "TEXT")
     private String description;
     @ManyToOne
     @JoinColumn(name = "season_id", referencedColumnName = "id")
